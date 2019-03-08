@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="mapper.GroupSeriesMapper">
+
+    <insert id="insGroup">
+        INSERT INTO groupSeries (id,gId,gName,campaignid,adid) VALUES (DEFAULT,#{gId},#{gName},#{campaignId},#{adId})
+    </insert>
+
+    <select id="selGroup" resultType="pojo.Group">
+        SELECT * FROM groupseries
+    </select>
+
+</mapper>

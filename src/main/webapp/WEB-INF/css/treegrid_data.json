@@ -1,0 +1,224 @@
+[
+  {
+    "id": 1,
+    "name": "JSON",
+    "value": "1",
+    "children": [
+      {
+        "id": 2,
+        "name": "type_define",
+        "children": [
+          {
+            "id": 21,
+            "name": "user_class[]",
+            "state": "closed",
+            "children": [
+              {
+                "id": 211,
+                "name": "common"
+              },
+              {
+                "id": 212,
+                "name": "newer"
+              },
+              {
+                "id": 213,
+                "name": "normal"
+              },
+              {
+                "id": 214,
+                "name": "older"
+              },
+              {
+                "id": 215,
+                "name": "fans"
+              }
+            ]
+          },
+          {
+            "id": 22,
+            "name": "ad_position_type[]",
+            "state": "closed",
+            "children": [
+              {
+                "id": 221,
+                "name": "apt_native"
+              },
+              {
+                "id": 222,
+                "name": "apt_full"
+              },
+              {
+                "id": 223,
+                "name": "apt_video"
+              },
+              {
+                "id": 224,
+                "name": "apt_banner"
+              },
+              {
+                "id": 225,
+                "name": "apt_news"
+              }
+            ]
+          },
+          {
+            "id": 23,
+            "name": "ap_type[]",
+            "state": "closed",
+            "children": [
+              {
+                "id": 231,
+                "name": "adt_admob_banner"
+              },
+              {
+                "id": 232,
+                "name": "adt_facebook_banner"
+              },
+              {
+                "id": 233,
+                "name": "adt_admob_full"
+              },
+              {
+                "id": 234,
+                "name": "adt_facebook_full"
+              },
+              {
+                "id": 235,
+                "name": "adt_facebook_native"
+              },
+              {
+                "id": 236,
+                "name": "adt_admob_native"
+              },
+              {
+                "id": 237,
+                "name": "adt_unity_video"
+              },
+              {
+                "id": 238,
+                "name": "adt_vungle_video"
+              },
+              {
+                "id": 239,
+                "name": "adt_admob_video"
+              },
+              {
+                "id": 2310,
+                "name": "adt_recommend_full"
+              },
+              {
+                "id": 2311,
+                "name": "adt_recommend_native"
+              },
+              {
+                "id": 2312,
+                "name": "adt_upgrade"
+              },
+              {
+                "id": 2313,
+                "name": "adt_discard"
+              },
+              {
+                "id": 2314,
+                "name": "adt_admob_news"
+              },
+              {
+                "id": 2315,
+                "name": "adt_facebook_news"
+              }
+            ]
+          },
+          {
+            "id": 24,
+            "name": "app_use_ad_type_mode[]",
+            "state": "closed",
+            "children": [
+              {
+                "id": 241,
+                "name": "facebook_full_screen"
+              },
+              {
+                "id": 242,
+                "name": "admob_full_screen"
+              },
+              {
+                "id": 243,
+                "name": "facebook_banner"
+              },
+              {
+                "id": 244,
+                "name": "facebook_native2full_screen"
+              },
+              {
+                "id": 245,
+                "name": "facebook_native2banner"
+              },
+              {
+                "id": 246,
+                "name": "facebook_native"
+              },
+              {
+                "id": 247,
+                "name": "admob_native2full_screen"
+              },
+              {
+                "id": 248,
+                "name": "admob_native2banner"
+              },
+              {
+                "id": 249,
+                "name": "admob_native"
+              },
+              {
+                "id": 2410,
+                "name": "admob_banner"
+              },
+              {
+                "id": 2411,
+                "name": "admob_banner2native"
+              },
+              {
+                "id": 2412,
+                "name": "admob_video"
+              },
+              {
+                "id": 2413,
+                "name": "vungle_video"
+              },
+              {
+                "id": 2414,
+                "name": "unity_video"
+              },
+              {
+                "id": 2415,
+                "name": "admob_news"
+              },
+              {
+                "id": 2416,
+                "name": "facebook_news"
+              },
+              {
+                "id": 2417,
+                "name": "recommend_full"
+              },
+              {
+                "id": 2418,
+                "name": "recommend_native"
+              },
+              {
+                "id": 2419,
+                "name": "upgrade"
+              },
+              {
+                "id": 2420,
+                "name": "discard",
+                "Persons": "k"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

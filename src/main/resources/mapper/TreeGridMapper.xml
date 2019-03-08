@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="mapper.TreeGridMapper">
+
+    <select id="selTreeGrid" resultType="pojo.TreeGridItem">
+        SELECT * FROM treegrid where configid=#{0}
+    </select>
+
+    <update id="upTreeGrid">
+        update treegrid set name=#{name},value=#{value} where id = #{id}
+    </update>
+
+    <insert id="insTreeGrid">
+        INSERT INTO treegrid (id,_parentId,configid,name,value)VALUES(DEFAULT,#{_parentId},#{configid},#{name},#{value})
+    </insert>
+
+    <delete id="delTreeGrid">
+        delete from treegrid where id = #{id}
+    </delete>
+
+    <select id="selMaxId" resultType="pojo.TreeGridItem">
+        SELECT MAX(id)id FROM treegrid
+    </select>
+
+    <select id="selTreeGridByPid" resultType="int">
+        SELECT id FROM treegrid where _parentId=#{_parentId}
+    </select>
+
+    <delete id="delTreeGridByConfigid">
+        delete from treegrid where configid = #{0}
+    </delete>
+
+</mapper>

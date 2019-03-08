@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="mapper.AppIdVersionMapper">
+
+    <select id="selAppIdVersion" resultType="pojo.AppIdVersion">
+        SELECT distinct appid FROM version
+    </select>
+
+    <select id="selAppIdVersion2" resultType="pojo.AppIdVersion">
+        <bind name="appid" value="'%'+appid+'%'"/>
+        SELECT distinct appid FROM version where appid like #{appid}
+    </select>
+
+    <select id="selAppIdToUpdate" resultType="pojo.AppIdVersion">
+        SELECT * FROM version where appid = #{appid}
+    </select>
+
+    <update id="upAppid">
+        update version set appid = #{appid} where id = #{id}
+    </update>
+
+    <insert id="insAppid">
+        INSERT INTO VERSION (appid,configid)VALUES("p",#{configIdPlus})
+    </insert>
+
+    <select id="selMaxConfigId" resultType="int">
+        SELECT MAX(configid)configid FROM VERSION
+    </select>
+
+    <delete id="delAppid">
+        DELETE FROM VERSION WHERE appid = #{0}
+    </delete>
+
+
+
+    <!--**************************************************************************************-->
+
+    <select id="selVersion" resultType="pojo.AppIdVersion">
+        SELECT * FROM version where appid = #{appid}
+    </select>
+
+    <update id="upVersion">
+        update version set version = #{version},state = #{state} where id = #{id}
+    </update>
+
+    <select id="selVersion2" resultType="pojo.AppIdVersion">
+        SELECT * FROM version where version = #{version} and appid = #{appid}
+    </select>
+
+    <insert id="insVersion">
+        INSERT INTO VERSION (appid,configid) VALUES (#{appid},#{configid})
+    </insert>
+
+    <delete id="delVersion">
+        DELETE FROM VERSION WHERE configid = #{0}
+    </delete>
+    <!--将生成的标准json存到数据库-->
+    <update id="upConfigJson">
+        update version set json = #{param1} where configid = #{param2}
+    </update>
+
+    <!--根据appid和version查询json-->
+    <select id="selJson" resultType="String">
+        SELECT json FROM version where appid = #{param1} and version = #{param2}
+    </select>
+
+</mapper>
